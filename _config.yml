@@ -3,5 +3,5 @@ theme: jekyll-theme-minimal
 title:
 description: Strive School Build Week Project
 
-logo: ! (./imgs/ntc.jpeg)
+logo: (./imgs/ntc.jpeg)
 # google_analytics: [Your Google Analytics tracking ID]
