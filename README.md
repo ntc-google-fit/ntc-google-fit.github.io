@@ -46,6 +46,14 @@ accuracy
 
 <br />
 
+### Deployment
+
+```python
+Streamlit
+```
+
+<br />
+
 ### Support or Contact
 
 Having trouble with to run your model? Please contact the support and we’ll help you out.
