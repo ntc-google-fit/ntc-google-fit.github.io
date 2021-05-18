@@ -1,8 +1,6 @@
 ## NTC - Google Fit Project
 
-For the 2nd build week on Strive School, the task is
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+For the 2nd build week on Strive School, the task is to create a machine learning model based on the data from Google Fit.
 
 <br />
 
@@ -26,22 +24,20 @@ dataset = pd.read_csv('./data/*.csv')
 print(dataset.head())
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
 <br />
 
 ### Preprocessing
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ntc-google-fit/ntc-google-fit.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```python
+dataset.isna().sum()
+```
 
 <br />
-
+<!-- 
 ### Data Analysis
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
 ```python
-print(dataset.head())
+print(dataset.head()) -->
 ```
 
 <br />
