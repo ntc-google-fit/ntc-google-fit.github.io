@@ -6,12 +6,24 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 <br />
 
-### Data Analysis
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Install and import packages
 
 ```python
-dataset = pd.read_csv('./data/dataset_5secondWindow.csv', index_col=[0])
+import numpy as np
+import pandas as pd
+import sklearn
+import matplotlib.pyplot as plt
+```
+
+<br />
+
+### Data Analysis
+
+Load data and create pandas dataframe for that.
+
+```python
+dataset = pd.read_csv('./data/*.csv')
+print(dataset.head())
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
@@ -36,4 +48,4 @@ print(dataset.head())
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Having trouble with to run your model? Please contact the support and we’ll help you out.
