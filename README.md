@@ -29,15 +29,19 @@ print(dataset.head())
 ### Preprocessing
 
 ```python
+to_drop = [i for i in dataset.columns if '#std' in i]
+dataset.drop(to_drop, axis=1, inplace=True)
+dataset.head()
+
 dataset.isna().sum()
 ```
 
 <br />
-<!-- 
-### Data Analysis
+
+### Model
 
 ```python
-print(dataset.head()) -->
+accuracy
 ```
 
 <br />
