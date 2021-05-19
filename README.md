@@ -94,7 +94,7 @@ x_train, x_val, y_train, y_val = model_selection.train_test_split(
 ```
 
 ```python
-accuracy: 81%
+accuracy: 80.68%
 ```
 
 <br />
