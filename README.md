@@ -11,6 +11,8 @@ import numpy as np
 import pandas as pd
 import sklearn
 import matplotlib.pyplot as plt
+
+set_config(display='diagram')
 ```
 
 <br />
@@ -36,11 +38,59 @@ dataset.head()
 dataset.isna().sum()
 ```
 
+```python
+import plotly.express as px
+
+fig = px.imshow(dataset.corr())
+fig.show()
+```
+
+<br />
+
+### Pipeline
+
+```python
+tree_classifiers = {
+  "Decision Tree": DecisionTreeClassifier(),
+  "Extra Trees":ExtraTreesClassifier(),
+  "Random Forest":RandomForestClassifier(),
+  "AdaBoost":AdaBoostClassifier(),
+  "Skl GBM":GradientBoostingClassifier(),
+  "Skl HistGBM":GradientBoostingClassifier(),
+  "XGBoost":XGBClassifier(),
+  "LightGBM":LGBMClassifier(),
+  "CatBoost":CatBoostClassifier()
+}
+
+tree_classifiers = {name: pipeline.make_pipeline(tree_prepro, model) for name, model in tree_classifiers.items()}
+
+
+tree_classifiers["LightGBM"]
+```
+
+<br />
+
+### Split
+
+```python
+# split
+x_train = dataset_train.drop(['target'], axis=1)
+y_train = dataset_train.target
+x_test = dataset_test.drop(['target'], axis=1)
+y_test = dataset_test.target
+```
+
 <br />
 
 ### Model
 
 ```python
+x_train, x_val, y_train, y_val = model_selection.train_test_split(
+    x_train, y_train,
+    test_size=0.2,
+    stratify = y_train,
+    random_state=37
+)
 accuracy: 81%
 ```
 
