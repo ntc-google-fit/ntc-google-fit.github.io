@@ -91,8 +91,15 @@ x_train, x_val, y_train, y_val = model_selection.train_test_split(
     stratify = y_train,
     random_state=37
 )
+```
+
+```python
 accuracy: 81%
 ```
+
+<br />
+
+![](https://github.com/ntc-google-fit/ntc-google-fit.github.io/blob/main/imgs/accuracy.png?raw=true)
 
 <br />
 
