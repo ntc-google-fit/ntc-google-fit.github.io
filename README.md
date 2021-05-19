@@ -41,7 +41,7 @@ dataset.isna().sum()
 ### Model
 
 ```python
-accuracy
+accuracy: 81%
 ```
 
 <br />
