@@ -93,11 +93,11 @@ x_train, x_val, y_train, y_val = model_selection.train_test_split(
 )
 ```
 
-```python
+<!-- ```python
 accuracy: 81%
 ```
 
-![](https://github.com/ntc-google-fit/ntc-google-fit.github.io/blob/main/imgs/accuracy.png?raw=true)
+![](https://github.com/ntc-google-fit/ntc-google-fit.github.io/blob/main/imgs/accuracy.png?raw=true) -->
 
 <br />
 
