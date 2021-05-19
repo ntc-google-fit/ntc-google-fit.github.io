@@ -94,10 +94,8 @@ x_train, x_val, y_train, y_val = model_selection.train_test_split(
 ```
 
 ```python
-accuracy: 80.68%
+accuracy: 81%
 ```
-
-<br />
 
 ![](https://github.com/ntc-google-fit/ntc-google-fit.github.io/blob/main/imgs/accuracy.png?raw=true)
 
@@ -114,3 +112,5 @@ Streamlit
 ### Support or Contact
 
 Having trouble with to run your model? Please contact the support and we’ll help you out.
+
+<br />
