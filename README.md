@@ -85,12 +85,13 @@ y_test = dataset_test.target
 ### Model
 
 ```python
-x_train, x_val, y_train, y_val = model_selection.train_test_split(
-    x_train, y_train,
-    test_size=0.2,
-    stratify = y_train,
-    random_state=37
-)
+for model_name, model in tree_classifiers.items():
+
+    start_time = time.time()
+    model.fit(x_train, y_train)
+    total_time = time.time() - start_time
+
+    pred = model.predict(x_test)
 ```
 
 ```python
