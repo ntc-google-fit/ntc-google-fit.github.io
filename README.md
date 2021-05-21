@@ -31,10 +31,10 @@ If you need extra help with Streamlit, got to the [documentation](https://docs.s
 
 ## The Team
 
-    - [Fabio Fistarol](https://github.com/fistadev)
-    - [Deniz Elci](https://github.com/deniz-shelby)
-    - [Farrukh Bulbulov](https://github.com/fbulbulov)
-    - [Vladimir Gasanov](https://github.com/VladimirGas)
+- [Fabio Fistarol](https://github.com/fistadev)
+- [Deniz Elci](https://github.com/deniz-shelby)
+- [Farrukh Bulbulov](https://github.com/fbulbulov)
+- [Vladimir Gasanov](https://github.com/VladimirGas)
 
 <br />
 
