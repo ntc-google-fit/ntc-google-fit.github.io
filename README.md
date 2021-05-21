@@ -1,4 +1,4 @@
-## NTC - Google Fit Project
+## Machine Learning Project
 
 For the 2nd build week on Strive School, the task is to create a machine learning model based on the data from Google Fit.
 
@@ -47,29 +47,6 @@ fig.show()
 
 <br />
 
-### Pipeline
-
-```python
-tree_classifiers = {
-  "Decision Tree": DecisionTreeClassifier(),
-  "Extra Trees":ExtraTreesClassifier(),
-  "Random Forest":RandomForestClassifier(),
-  "AdaBoost":AdaBoostClassifier(),
-  "Skl GBM":GradientBoostingClassifier(),
-  "Skl HistGBM":GradientBoostingClassifier(),
-  "XGBoost":XGBClassifier(),
-  "LightGBM":LGBMClassifier(),
-  "CatBoost":CatBoostClassifier()
-}
-
-tree_classifiers = {name: pipeline.make_pipeline(tree_prepro, model) for name, model in tree_classifiers.items()}
-
-
-tree_classifiers["LightGBM"]
-```
-
-<br />
-
 ### Split
 
 ```python
@@ -79,26 +56,6 @@ y_train = dataset_train.target
 x_test = dataset_test.drop(['target'], axis=1)
 y_test = dataset_test.target
 ```
-
-<br />
-
-### Model
-
-```python
-for model_name, model in tree_classifiers.items():
-
-    start_time = time.time()
-    model.fit(x_train, y_train)
-    total_time = time.time() - start_time
-
-    pred = model.predict(x_test)
-```
-
-```python
-accuracy: 83 %
-```
-
-![](https://github.com/ntc-google-fit/ntc-google-fit.github.io/blob/main/imgs/accuracy.png?raw=true)
 
 <br />
 
