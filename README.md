@@ -50,6 +50,10 @@ fig.show()
 ### Split
 
 ```python
+# split by users
+train_users = ['U1', 'U3', 'U6', 'U7', 'U10', 'U12']
+test_users = ['U2', 'U4', 'U5', 'U8', 'U9', 'U11']
+
 # split
 x_train = dataset_train.drop(['target'], axis=1)
 y_train = dataset_train.target
