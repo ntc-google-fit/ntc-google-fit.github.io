@@ -4,6 +4,41 @@ For the 2nd build week on Strive School, the task is to create a machine learnin
 
 <br />
 
+### How to run
+
+1. Clone the repository:
+
+```python
+$ git clone https://github.com/ntc-google-fit/google_fit_project
+$ google_fit_project
+
+```
+
+2. Install dependencies:
+
+```
+$ pip install -r requirements.txt
+```
+
+3. Start the application:
+
+```
+streamlit run app.py
+```
+
+If you need extra help with Streamlit, got to the [documentation](https://docs.streamlit.io)
+
+<br />
+
+## The Team
+
+    - [Fabio Fistarol](https://github.com/fistadev)
+    - [Deniz Elci](https://github.com/deniz-shelby)
+    - [Farrukh Bulbulov](https://github.com/fbulbulov)
+    - [Vladimir Gasanov](https://github.com/VladimirGas)
+
+<br />
+
 ### Install and import packages
 
 ```python
